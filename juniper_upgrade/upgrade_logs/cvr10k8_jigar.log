@@ -1,0 +1,265 @@
+2018-06-28 13:48:25,065:192.168.38.34: Information logged in /home/jvyas/projects/juniper_upgrade/upgrade_logs/cvr10k8_jigar.log
+2018-06-28 13:48:25,079:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.9)
+2018-06-28 13:48:25,301:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-28 13:48:25,581:ncclient.transport.session: initialized: session-id=15673 | server_capabilities=<dict_keyiterator object at 0x7f8626513d68>
+2018-06-28 13:48:25,583:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:48:26,666:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:48:26,847:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:48:27,090:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:48:27,191:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:48:27,295:192.168.38.34: Starting the software upgrade process: jinstall-host-qfx-10-m-flex-17.1R1.8-secure-signed.tgz
+2018-06-28 13:48:27,296:192.168.38.34: validating software against current config, please be patient ...
+2018-06-28 13:48:27,297:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:51:49,145:192.168.38.34: software validate package-result: 0
+Output: 
+Verified jinstall-host-qfx-10-m-flex-17.1R1.8-secure-signed signed by PackageProductionSwitchingEc_2015 method ECDSA256+SHA256
+Pushing Junos image package to the host...
+Installing /var/tmp/install-media-qfx-10-junos-17.1R1.8-secure.tgz
+Extracting the package ...
+total 1134724
+-rw-r--r-- 1 20607 758 235248249 Jun 29 00:23 jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+-rw-r--r-- 1 20607 758 926696695 Jun 29 00:23 jinstall-qfx-10-junos-17.1R1.8-secure-app.tgz
+
+============================================
+Host OS upgrade is FORCED
+Current Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Package Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Current Host version        : 3.0.4
+Package Host version        : 3.0.3
+Min host version required for applications: 3.0.0
+============================================
+
+Validate linux image...
+upgrade_platform: -------------------
+upgrade_platform: Parameters passed:
+upgrade_platform: silent=0
+upgrade_platform: package=/var/tmp/tmp.tY1z7EHed1junos_cli_upg/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+upgrade_platform: clean install=0
+upgrade_platform: on primary   =0
+upgrade_platform: clean upgrade=0
+upgrade_platform: Need reboot after staging=1
+upgrade_platform: -------------------
+upgrade_platform: 
+upgrade_platform: Checking input /var/tmp/tmp.tY1z7EHed1junos_cli_upg/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz ... 
+upgrade_platform: Input package /var/tmp/tmp.tY1z7EHed1junos_cli_upg/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz is valid.
+Secure Boot is enforced.
+ALLOW:usr/secureboot/grub/BOOTX64.EFI
+ALLOW:boot/bzImage-intel-x86-64.bin
+ALLOW:boot/initramfs.cpio.gz
+Setting up Junos host applications for installation ...
+Installing Host OS ...
+upgrade_platform: -------------------
+upgrade_platform: Parameters passed:
+upgrade_platform: silent=0
+upgrade_platform: package=/var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+upgrade_platform: clean install=0
+upgrade_platform: on primary   =0
+upgrade_platform: clean upgrade=0
+upgrade_platform: Need reboot after staging=0
+upgrade_platform: -------------------
+upgrade_platform: 
+upgrade_platform: Checking input /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz ... 
+upgrade_platform: Input package /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz is valid.
+Secure Boot is enforced.
+ALLOW:usr/secureboot/grub/BOOTX64.EFI
+ALLOW:boot/bzImage-intel-x86-64.bin
+ALLOW:boot/initramfs.cpio.gz
+upgrade_platform: Staging the upgrade package - /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz..
+./
+./bzImage-intel-x86-64.bin
+./bzImage-intel-x86-64.bin.psig
+./grub/
+./grub/grub.conf
+./grub/grub.efi
+./initramfs.cpio.gz
+./initramfs.cpio.gz.psig
+./linux.checksum
+./version.txt
+./upgrade_platform
+./host-version
+./platform_info
+./initrd.cpio.gz
+bzImage-intel-x86-64.bin: OK
+initramfs.cpio.gz: OK
+version.txt: OK
+upgrade_platform: Checksum verified and OK...
+1016725 blocks
+upgrade_platform: Staging of /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz completed
+upgrade_platform: System need *REBOOT* to complete the upgrade
+upgrade_platform: Run upgrade_platform with option -r | --rollback to rollback the upgrade
+
+Host OS upgrade staged. Reboot the system to complete installation!
+
+Initializing...
+Mounting os-libs-10-x86-64-20180310.ba55661_builder_stable_10
+Mounting os-runtime-x86-64-20180310.ba55661_builder_stable_10
+Mounting os-zoneinfo-x86-64-20180310.ba55661_builder_stable_10
+Mounting os-libs-compat32-10-x86-64-20180310.ba55661_builder_stable_10
+Mounting os-compat32-x86-64-20180310.ba55661_builder_stable_10
+Mounting py-extensions-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting py-base-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting os-vmguest-x86-64-20180310.ba55661_builder_stable_10
+Mounting os-crypto-x86-64-20180310.ba55661_builder_stable_10
+Mounting junos-net-prd-x86-64-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-libs-x86-64-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-libs-compat32-x86-64-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-runtime-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-runtime-qfx-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-platform-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-platform-qfx-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-modules-x86-64-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-modules-qfx-x86-64-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-dp-crypto-support-qfx-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-daemons-x86-64-20180511.025103_builder_junos_173_r2_s2
+Mounting junos-daemons-qfx-x86-64-20180511.025103_builder_junos_173_r2_s2
+Mounting jsdn-x86-32-17.3R2-S2.1
+Mounting jsd-x86-32-17.3R2-S2.1-jet-1
+Mounting jpuppet-3.6.1_3.0_x86-32
+Mounting jpfe-qfx-x86-32-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting jpfe-common-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting jfirmware-x86-32-17.3R2-S2.1
+Mounting jdocs-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting fips-mode-x86-32-20180511.025103_builder_junos_173_r2_s2
+Mounting chef-11.10.4_2.0_x86-32
+Hardware Database regeneration succeeded
+Validating against /config/juniper.conf.gz
+mgd: commit complete
+Validation succeeded
+
+2018-06-28 13:51:49,151:192.168.38.34: installing software on RE0 ... please be patient ...
+2018-06-28 13:51:49,152:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:53:11,956:192.168.38.34: software pkgadd package-result: 0
+Output: 
+Verified jinstall-host-qfx-10-m-flex-17.1R1.8-secure-signed signed by PackageProductionSwitchingEc_2015 method ECDSA256+SHA256
+Pushing Junos image package to the host...
+There is pending upgrade. upgrade_in_progress=stage
+Please reboot the system to complete the installation or rollback before attempting another upgrade
+
+2018-06-28 13:53:11,958:192.168.38.34: installing software on RE1 ... please be patient ...
+2018-06-28 13:53:11,959:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:56:07,357:192.168.38.34: software pkgadd package-result: 0
+Output: 
+Pushing /var/tmp/jinstall-host-qfx-10-m-flex-17.1R1.8-secure-signed.tgz to re1:/var/tmp/jinstall-host-qfx-10-m-flex-17.1R1.8-secure-signed.tgz
+Verified jinstall-host-qfx-10-m-flex-17.1R1.8-secure-signed signed by PackageProductionSwitchingEc_2015 method ECDSA256+SHA256
+Pushing Junos image package to the host...
+Installing /var/tmp/install-media-qfx-10-junos-17.1R1.8-secure.tgz
+Extracting the package ...
+total 1134724
+-rw-r--r-- 1 20607 758 235248249 Jun 29 00:28 jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+-rw-r--r-- 1 20607 758 926696695 Jun 29 00:28 jinstall-qfx-10-junos-17.1R1.8-secure-app.tgz
+
+============================================
+Host OS upgrade is FORCED
+Current Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Package Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Current Host version        : 3.0.4
+Package Host version        : 3.0.3
+Min host version required for applications: 3.0.0
+============================================
+
+Validate linux image...
+upgrade_platform: -------------------
+upgrade_platform: Parameters passed:
+upgrade_platform: silent=0
+upgrade_platform: package=/var/tmp/tmp.ioJSqgwLSsjunos_cli_upg/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+upgrade_platform: clean install=0
+upgrade_platform: on primary   =0
+upgrade_platform: clean upgrade=0
+upgrade_platform: Need reboot after staging=1
+upgrade_platform: -------------------
+upgrade_platform:
+upgrade_platform: Checking input /var/tmp/tmp.ioJSqgwLSsjunos_cli_upg/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz ...
+upgrade_platform: Input package /var/tmp/tmp.ioJSqgwLSsjunos_cli_upg/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz is valid.
+Secure Boot is enforced.
+ALLOW:usr/secureboot/grub/BOOTX64.EFI
+ALLOW:boot/bzImage-intel-x86-64.bin
+ALLOW:boot/initramfs.cpio.gz
+Setting up Junos host applications for installation ...
+Installing Host OS ...
+upgrade_platform: -------------------
+upgrade_platform: Parameters passed:
+upgrade_platform: silent=0
+upgrade_platform: package=/var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+upgrade_platform: clean install=0
+upgrade_platform: on primary   =0
+upgrade_platform: clean upgrade=0
+upgrade_platform: Need reboot after staging=0
+upgrade_platform: -------------------
+upgrade_platform:
+upgrade_platform: Checking input /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz ...
+upgrade_platform: Input package /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz is valid.
+Secure Boot is enforced.
+ALLOW:usr/secureboot/grub/BOOTX64.EFI
+ALLOW:boot/bzImage-intel-x86-64.bin
+ALLOW:boot/initramfs.cpio.gz
+upgrade_platform: Staging the upgrade package - /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz..
+./
+./bzImage-intel-x86-64.bin
+./bzImage-intel-x86-64.bin.psig
+./grub/
+./grub/grub.conf
+./grub/grub.efi
+./initramfs.cpio.gz
+./initramfs.cpio.gz.psig
+./linux.checksum
+./version.txt
+./upgrade_platform
+./host-version
+./platform_info
+./initrd.cpio.gz
+bzImage-intel-x86-64.bin: OK
+initramfs.cpio.gz: OK
+version.txt: OK
+upgrade_platform: Checksum verified and OK...
+1016725 blocks
+upgrade_platform: Staging of /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz completed
+upgrade_platform: System need *REBOOT* to complete the upgrade
+upgrade_platform: Run upgrade_platform with option -r | --rollback to rollback the upgrade
+
+Host OS upgrade staged. Reboot the system to complete installation!
+
+2018-06-28 13:56:07,363:192.168.38.34: Software installation complete. Rebooting
+2018-06-28 13:56:07,364:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 13:56:07,842:192.168.38.34: Upgrade pending reboot cycle, please be patient.
+2018-06-28 13:56:07,842:192.168.38.34: Shutdown NOW!
+[pid 31443]
+2018-06-28 13:56:07,843:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-06-28 14:09:23,727:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.6.1)
+2018-06-28 14:09:23,874:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-28 14:09:24,053:ncclient.transport.session: initialized: session-id=13403 | server_capabilities=<dict_keyiterator object at 0x7f8626513688>
+2018-06-28 14:09:24,056:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:24,164:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:24,273:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:28,135:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:28,243:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-06-28 14:09:28,365:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.6.1)
+2018-06-28 14:09:28,585:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-28 14:09:28,764:ncclient.transport.session: initialized: session-id=13841 | server_capabilities=<dict_keyiterator object at 0x7f8623281868>
+2018-06-28 14:09:28,768:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:28,871:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:28,980:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:32,131:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:32,237:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-06-28 14:09:32,354:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.6.1)
+2018-06-28 14:09:32,573:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-28 14:09:32,747:ncclient.transport.session: initialized: session-id=14219 | server_capabilities=<dict_keyiterator object at 0x7f86265136d8>
+2018-06-28 14:09:32,749:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:32,856:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:32,964:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:36,018:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:36,124:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-06-28 14:09:36,241:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.6.1)
+2018-06-28 14:09:36,461:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-28 14:09:36,634:ncclient.transport.session: initialized: session-id=14266 | server_capabilities=<dict_keyiterator object at 0x7f8626513ea8>
+2018-06-28 14:09:36,636:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:36,743:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:36,852:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:40,029:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:40,134:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-06-28 14:09:40,251:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.6.1)
+2018-06-28 14:09:40,470:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-28 14:09:40,642:ncclient.transport.session: initialized: session-id=14653 | server_capabilities=<dict_keyiterator object at 0x7f8626513e58>
+2018-06-28 14:09:40,644:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:41,643:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:41,879:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-28 14:09:42,033:ncclient.operations.rpc: Requesting 'CloseSession'

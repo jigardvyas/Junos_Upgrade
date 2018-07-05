@@ -1,0 +1,79 @@
+2018-07-02 10:26:42,682:192.168.38.40: Information logged in /home/jvyas/projects/juniper_upgrade/upgrade_logs/qfx5100_vc_test.log
+2018-07-02 10:26:42,706:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.2)
+2018-07-02 10:26:42,947:ncclient.transport.ssh: Authentication (password) successful!
+2018-07-02 10:26:43,358:ncclient.transport.session: initialized: session-id=9893 | server_capabilities=<dict_keyiterator object at 0x7f636a818a98>
+2018-07-02 10:26:43,359:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:26:45,111:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:26:45,242:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:26:45,389:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:26:45,479:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:26:45,583:192.168.38.40: Starting the software upgrade process: jinstall-host-qfx-5-flex-17.3R2-S2.1-limited-signed.tgz
+2018-07-02 10:26:45,584:192.168.38.40: Unable to install software, name 'nssu_check' is not defined
+2018-07-02 10:26:45,585:192.168.38.40: Unable to install software, False
+2018-07-02 10:26:45,586:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-07-02 10:30:22,561:192.168.38.40: Information logged in /home/jvyas/projects/juniper_upgrade/upgrade_logs/qfx5100_vc_test.log
+2018-07-02 10:30:22,586:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.2)
+2018-07-02 10:30:22,827:ncclient.transport.ssh: Authentication (password) successful!
+2018-07-02 10:30:23,222:ncclient.transport.session: initialized: session-id=9997 | server_capabilities=<dict_keyiterator object at 0x7f840f37a778>
+2018-07-02 10:30:23,223:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:30:25,193:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:30:25,326:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:30:25,478:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:30:25,570:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:30:25,674:192.168.38.40: Starting the software upgrade process: jinstall-host-qfx-5-flex-17.3R2-S2.1-limited-signed.tgz
+2018-07-02 10:30:25,675:192.168.38.40: Unable to install software, name 'nssu_check' is not defined
+2018-07-02 10:30:25,676:192.168.38.40: Unable to install software, False
+2018-07-02 10:30:25,677:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-07-02 10:36:55,943:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.2)
+2018-07-02 10:36:56,214:ncclient.transport.ssh: Authentication (password) successful!
+2018-07-02 10:36:56,662:ncclient.transport.session: initialized: session-id=10077 | server_capabilities=<dict_keyiterator object at 0x7f840f37aea8>
+2018-07-02 10:36:56,665:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:36:56,784:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:36:56,882:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:37:01,300:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:37:01,405:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-07-02 10:37:01,533:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.2)
+2018-07-02 10:37:01,774:ncclient.transport.ssh: Authentication (password) successful!
+2018-07-02 10:37:02,211:ncclient.transport.session: initialized: session-id=10125 | server_capabilities=<dict_keyiterator object at 0x7f840f37ae08>
+2018-07-02 10:37:02,213:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:37:04,071:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:37:04,202:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:37:04,380:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-07-02 10:38:28,869:192.168.38.40: Information logged in /home/jvyas/projects/juniper_upgrade/upgrade_logs/qfx5100_vc_test.log
+2018-07-02 10:38:28,894:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.2)
+2018-07-02 10:38:29,149:ncclient.transport.ssh: Authentication (password) successful!
+2018-07-02 10:38:29,541:ncclient.transport.session: initialized: session-id=10251 | server_capabilities=<dict_keyiterator object at 0x7fe7af50e778>
+2018-07-02 10:38:29,543:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:38:31,284:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:38:31,415:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:38:31,561:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:38:31,654:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:38:31,759:192.168.38.40: Starting the software upgrade process: jinstall-host-qfx-5-flex-17.3R2-S2.1-limited-signed.tgz
+2018-07-02 10:38:31,760:192.168.38.40: validating software against current config, please be patient ...
+2018-07-02 10:38:31,761:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:45:26,046:192.168.38.40: software validate package-result: 0
+Output: 
+
+Checking pending install on fpc0
+
+
+Checking pending install on fpc1
+
+Pushing bundle /var/tmp/jinstall-host-qfx-5-flex-17.3R2-S2.1-limited-signed.tgz to fpc0
+
+
+fpc0:
+
+
+fpc1:
+2018-07-02 10:45:26,049:192.168.38.40: installing software on VC member: 0 ... please be patient ...
+2018-07-02 10:45:26,050:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 10:55:47,713:ncclient.transport.ssh: Socket exception: Connection reset by peer (104)
+2018-07-02 10:55:47,718:192.168.38.40: Unable to install software, ConnectClosedError(192.168.38.40)
+2018-07-02 10:55:47,718:192.168.38.40: Unable to install software, False
+2018-07-02 11:02:17,879:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_7.2)
+2018-07-02 11:02:18,138:ncclient.transport.ssh: Authentication (password) successful!
+2018-07-02 11:02:18,540:ncclient.transport.session: initialized: session-id=10167 | server_capabilities=<dict_keyiterator object at 0x7fe7af50ed68>
+2018-07-02 11:02:18,542:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 11:02:18,663:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-07-02 11:02:18,765:ncclient.operations.rpc: Requesting 'ExecuteRpc'

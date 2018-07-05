@@ -1,0 +1,5 @@
+activate chassis redundancy graceful-switchover
+activate routing-options nonstop-routing
+activate protocols layer2-control nonstop-bridging
+activate chassis redundancy failover on-disk-failure
+

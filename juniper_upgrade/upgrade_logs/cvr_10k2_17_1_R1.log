@@ -1,0 +1,113 @@
+2018-06-25 17:24:36,561:192.168.38.37: Information logged in /home/jvyas/projects/juniper_upgrade/upgrade_logscvr_10k2.log
+2018-06-25 17:24:36,571:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.6.1)
+2018-06-25 17:24:36,795:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-25 17:24:36,909:ncclient.transport.session: initialized: session-id=7186 | server_capabilities=<dict_keyiterator object at 0x7f7e36cf1b38>
+2018-06-25 17:24:36,911:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-25 17:24:37,739:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-25 17:24:37,873:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-25 17:24:38,029:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-25 17:24:38,122:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-25 17:24:38,230:192.168.38.37: Starting the software upgrade process: jinstall-host-qfx-10-f-flex-17.1R1.8-secure-signed.tgz
+2018-06-25 17:24:38,231:192.168.38.37: validating software against current config, please be patient ...
+2018-06-25 17:24:38,232:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-25 17:27:38,376:192.168.38.37: software validate package-result: 0
+Output: 
+Verified jinstall-host-qfx-10-f-flex-17.1R1.8-secure-signed signed by PackageProductionSwitchingEc_2015
+Pushing Junos image package to the host...
+Installing /var/tmp/install-media-qfx-10-junos-17.1R1.8-secure.tgz
+Extracting the package ...
+total 994568
+-rw-r--r-- 1 20607 758 235250591 Jun 26 04:13 jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+-rw-r--r-- 1 20607 758 783174969 Jun 26 04:13 jinstall-qfx-10-junos-17.1R1.8-secure-app.tgz
+
+============================================
+Host OS upgrade is FORCED
+Current Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Package Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Current Host version        : 3.0.3
+Package Host version        : 3.0.3
+Min host version required for applications: 3.0.0
+============================================
+
+Validate linux image...
+Setting up Junos host applications for installation ...
+Installing Host OS ...
+upgrade_platform: -------------------
+upgrade_platform: Parameters passed:
+upgrade_platform: silent=0
+upgrade_platform: package=/var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz
+upgrade_platform: clean install=0
+upgrade_platform: on primary   =0
+upgrade_platform: clean upgrade=0
+upgrade_platform: Need reboot after staging=0
+upgrade_platform: -------------------
+upgrade_platform: 
+upgrade_platform: Checking input /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz ... 
+upgrade_platform: Input package /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz is valid.
+upgrade_platform: Staging the upgrade package - /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz..
+./
+./bzImage-intel-x86-64.bin
+./bzImage-intel-x86-64.bin.psig
+./grub/
+./grub/grub.conf
+./grub/grub.efi
+./initramfs.cpio.gz
+./initramfs.cpio.gz.psig
+./linux.checksum
+./version.txt
+./upgrade_platform
+./host-version
+./platform_info
+./initrd.cpio.gz
+bzImage-intel-x86-64.bin: OK
+initramfs.cpio.gz: OK
+version.txt: OK
+upgrade_platform: Checksum verified and OK...
+upgrade_platform: Staging of /var/tmp/jinstall-qfx-10-junos-17.1R1.8-secure-linux.tgz completed
+upgrade_platform: System need *REBOOT* to complete the upgrade
+upgrade_platform: Run upgrade_platform with option -r | --rollback to rollback the upgrade
+
+Host OS upgrade staged. Reboot the system to complete installation!
+
+Initializing...
+Mounting os-libs-10-x86-64-20160825.336113_builder_stable_10-331042
+Mounting os-runtime-x86-64-20160825.336113_builder_stable_10-331042
+Mounting os-zoneinfo-x86-64-20160825.336113_builder_stable_10-331042
+Mounting os-libs-compat32-10-x86-64-20160825.336113_builder_stable_10-331042
+Mounting os-compat32-x86-64-20160825.336113_builder_stable_10-331042
+Mounting py-extensions-x86-32-20170401.205634_builder_junos_151_x53_d63
+Mounting py-base-x86-32-20170401.205634_builder_junos_151_x53_d63
+Mounting os-crypto-x86-64-20160825.336113_builder_stable_10-331042
+Mounting junos-net-prd-x86-64-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-libs-compat32-x86-64-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-runtime-x86-32-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-runtime-qfx-x86-32-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-platform-qfx-x86-32-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-modules-x86-64-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-modules-qfx-x86-64-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-libs-x86-64-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-dp-crypto-support-x86-32-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-daemons-x86-64-20170401.205634_builder_junos_151_x53_d63
+Mounting junos-daemons-qfx-x86-64-20170401.205634_builder_junos_151_x53_d63
+Mounting jsdn-x86-32-15.1X53-D63.9
+Verified chef-3.6.1_2.1.junos signed by juniper-cdbu-commercial-1
+Mounting chef-3.6.1_2.1.junos.x86-32
+Mounting jdocs-x86-32-20170401.205634_builder_junos_151_x53_d63
+Verified chef-11.10.4_1.1.junos signed by chef-juniper-commercial-1
+Mounting chef-11.10.4_1.1.junos.x86-32
+Hardware Database regeneration succeeded
+Validating against /config/juniper.conf.gz
+mgd: commit complete
+Validation succeeded
+
+2018-06-25 17:27:38,383:192.168.38.37: installing software ... please be patient ...
+2018-06-25 17:27:38,384:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-25 17:28:28,650:192.168.38.37: software pkgadd package-result: 0
+Output: 
+Verified jinstall-host-qfx-10-f-flex-17.1R1.8-secure-signed signed by PackageProductionSwitchingEc_2015
+Pushing Junos image package to the host...
+There is pending upgrade. upgrade_in_progress=stage
+Please reboot the system to complete the installation or rollback before attempting another upgrade
+
+2018-06-25 17:28:28,652:192.168.38.37: Software installation complete. Rebooting
+2018-06-25 17:28:28,653:ncclient.operations.rpc: Requesting 'ExecuteRpc'

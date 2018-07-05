@@ -1,0 +1,5 @@
+deactivate chassis redundancy graceful-switchover
+deactivate routing-options nonstop-routing
+deactivate protocols layer2-control nonstop-bridging
+deactivate chassis redundancy failover on-disk-failure
+

@@ -1,0 +1,237 @@
+2018-06-26 05:02:19,077:192.168.38.37: Information logged in /home/jvyas/projects/juniper_upgrade/upgrade_logs/cvr_10k2_17_2_R1.log
+2018-06-26 05:02:19,087:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.6.1)
+2018-06-26 05:02:19,308:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-26 05:02:19,472:ncclient.transport.session: initialized: session-id=13640 | server_capabilities=<dict_keyiterator object at 0x7f51001f3db8>
+2018-06-26 05:02:19,474:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:02:20,222:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:02:20,351:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:02:20,505:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:02:20,593:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:02:20,696:192.168.38.37: Starting the software upgrade process: jinstall-host-qfx-10-f-flex-x86-64-17.2R1.13-secure-signed.tgz
+2018-06-26 05:02:20,697:192.168.38.37: validating software against current config, please be patient ...
+2018-06-26 05:02:20,698:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:05:12,243:192.168.38.37: software validate package-result: 0
+Output: 
+Verified jinstall-host-qfx-10-f-flex-x86-64-17.2R1.13-secure-signed signed by PackageProductionSwitchingEc_2015 method ECDSA256+SHA256
+Pushing Junos image package to the host...
+Installing /var/tmp/install-media-qfx-10-junos-17.2R1.13-secure.tgz
+Extracting the package ...
+total 996296
+-rw-r--r-- 1 20607 758 235234289 Jun 26 15:51 jinstall-qfx-10-junos-17.2R1.13-secure-linux.tgz
+-rw-r--r-- 1 20607 758 784959078 Jun 26 15:51 jinstall-qfx-10-junos-17.2R1.13-secure-app.tgz
+
+============================================
+Host OS upgrade is FORCED
+Current Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Package Host kernel version : 3.14.52-rt50-WR7.0.0.9_ovp
+Current Host version        : 3.0.3
+Package Host version        : 3.0.3
+Min host version required for applications: 3.0.0
+============================================
+
+Validate linux image...
+Setting up Junos host applications for installation ...
+cp: cannot stat '/var/third-party/jdm-config/jdm_new_image_md5': No such file or directory
+Installing Host OS ...
+upgrade_platform: -------------------
+upgrade_platform: Parameters passed:
+upgrade_platform: silent=0
+upgrade_platform: package=/var/tmp/jinstall-qfx-10-junos-17.2R1.13-secure-linux.tgz
+upgrade_platform: clean install=0
+upgrade_platform: on primary   =0
+upgrade_platform: clean upgrade=0
+upgrade_platform: Need reboot after staging=0
+upgrade_platform: -------------------
+upgrade_platform: 
+upgrade_platform: Checking input /var/tmp/jinstall-qfx-10-junos-17.2R1.13-secure-linux.tgz ... 
+upgrade_platform: Input package /var/tmp/jinstall-qfx-10-junos-17.2R1.13-secure-linux.tgz is valid.
+Error: efivarfs is not supported
+secure boot status is unknown
+upgrade_platform: Staging the upgrade package - /var/tmp/jinstall-qfx-10-junos-17.2R1.13-secure-linux.tgz..
+./
+./bzImage-intel-x86-64.bin
+./bzImage-intel-x86-64.bin.psig
+./grub/
+./grub/grub.conf
+./grub/grub.efi
+./initramfs.cpio.gz
+./initramfs.cpio.gz.psig
+./linux.checksum
+./version.txt
+./upgrade_platform
+./host-version
+./platform_info
+./initrd.cpio.gz
+bzImage-intel-x86-64.bin: OK
+initramfs.cpio.gz: OK
+version.txt: OK
+upgrade_platform: Checksum verified and OK...
+upgrade_platform: Staging of /var/tmp/jinstall-qfx-10-junos-17.2R1.13-secure-linux.tgz completed
+upgrade_platform: System need *REBOOT* to complete the upgrade
+upgrade_platform: Run upgrade_platform with option -r | --rollback to rollback the upgrade
+
+Host OS upgrade staged. Reboot the system to complete installation!
+
+Initializing...
+Mounting os-libs-10-x86-64-20170209.344539_builder_stable_10
+Mounting os-runtime-x86-64-20170209.344539_builder_stable_10
+Mounting os-zoneinfo-x86-64-20170209.344539_builder_stable_10
+Mounting os-libs-compat32-10-x86-64-20170209.344539_builder_stable_10
+Mounting os-compat32-x86-64-20170209.344539_builder_stable_10
+Mounting py-extensions-x86-32-20170227.183729_builder_junos_171_r1
+Mounting py-base-x86-32-20170227.183729_builder_junos_171_r1
+Mounting os-vmguest-x86-64-20170209.344539_builder_stable_10
+Mounting os-crypto-x86-64-20170209.344539_builder_stable_10
+Mounting junos-net-prd-x86-64-20170227.183729_builder_junos_171_r1
+Mounting junos-modules-x86-64-20170227.183729_builder_junos_171_r1
+Mounting junos-modules-qfx-x86-64-20170227.183729_builder_junos_171_r1
+Mounting junos-libs-x86-64-20170227.183729_builder_junos_171_r1
+Mounting junos-libs-compat32-x86-64-20170227.183729_builder_junos_171_r1
+Mounting junos-runtime-x86-32-20170227.183729_builder_junos_171_r1
+Mounting junos-runtime-qfx-x86-32-20170227.183729_builder_junos_171_r1
+Mounting junos-platform-x86-32-20170227.183729_builder_junos_171_r1
+Mounting junos-platform-qfx-x86-32-20170227.183729_builder_junos_171_r1
+Mounting junos-dp-crypto-support-qfx-x86-32-20170227.183729_builder_junos_171_r1
+Mounting junos-daemons-x86-64-20170227.183729_builder_junos_171_r1
+Mounting junos-daemons-qfx-x86-64-20170227.183729_builder_junos_171_r1
+Mounting jsdn-x86-32-17.1R1.8
+Mounting jsd-x86-32-17.1R1.8-jet-1
+Mounting chef-3.6.1_2.1.junos.x86-32
+/var/val/chroot/packages/mnt/jpuppet-3.6.1_2.1.junos.x86-3232-2e439560/pkg/manifest: 5: invalid manifest keyword at 31
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/jpuppet-3.6.1_2.1.junos.x86-3232-2e439560/pkg/manifest: 6: invalid manifest keyword at 1
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/jpuppet-3.6.1_2.1.junos.x86-3232-2e439560/pkg/manifest: 7: invalid manifest keyword at 2
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/jpuppet-3.6.1_2.1.junos.x86-3232-2e439560/pkg/manifest: 709: invalid manifest keyword at 5
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/jpuppet-3.6.1_2.1.junos.x86-3232-2e439560/pkg/manifest: 710: invalid manifest keyword at 6
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/jpuppet-3.6.1_2.1.junos.x86-3232-2e439560/pkg/manifest: 1749: invalid manifest keyword at 8
+skipping to next fingerprint
+Mounting jpfe-qfx-x86-32-x86-32-20170227.183729_builder_junos_171_r1
+Mounting jpfe-common-x86-32-20170227.183729_builder_junos_171_r1
+Mounting jfirmware-x86-32-17.1R1.8
+Mounting jdocs-x86-32-20170227.183729_builder_junos_171_r1
+Mounting chef-11.10.4_1.1.junos.x86-32
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 5: invalid manifest keyword at 31
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3322: invalid manifest keyword at 2
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3323: invalid manifest keyword at 3
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3324: invalid manifest keyword at 4
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3325: invalid manifest keyword at 5
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3326: invalid manifest keyword at 6
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3327: invalid manifest keyword at 7
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3328: invalid manifest keyword at 8
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3329: invalid manifest keyword at 9
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3330: invalid manifest keyword at 10
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3331: invalid manifest keyword at 11
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3332: invalid manifest keyword at 12
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3333: invalid manifest keyword at 13
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3334: invalid manifest keyword at 14
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3335: invalid manifest keyword at 15
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3336: invalid manifest keyword at 16
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3337: invalid manifest keyword at 17
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3338: invalid manifest keyword at 18
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3339: invalid manifest keyword at 19
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3340: invalid manifest keyword at 20
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3341: invalid manifest keyword at 21
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3342: invalid manifest keyword at 22
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3343: invalid manifest keyword at 23
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3344: invalid manifest keyword at 24
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3345: invalid manifest keyword at 25
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3346: invalid manifest keyword at 26
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3347: invalid manifest keyword at 27
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3348: invalid manifest keyword at 28
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3349: invalid manifest keyword at 29
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3350: invalid manifest keyword at 30
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3351: invalid manifest keyword at 31
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3352: invalid manifest keyword at 1
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3353: invalid manifest keyword at 2
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3354: invalid manifest keyword at 3
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3355: invalid manifest keyword at 4
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3356: invalid manifest keyword at 5
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3357: invalid manifest keyword at 6
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3362: invalid manifest keyword at 1
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3363: invalid manifest keyword at 2
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3364: invalid manifest keyword at 3
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3365: invalid manifest keyword at 4
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3366: invalid manifest keyword at 5
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3367: invalid manifest keyword at 6
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3368: invalid manifest keyword at 7
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 3369: invalid manifest keyword at 8
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 4674: invalid manifest keyword at 2
+skipping to next fingerprint
+/var/val/chroot/packages/mnt/chef-11.10.4_1.1.junos.x86-3232-93213d6d/pkg/manifest: 4675: invalid manifest keyword at 3
+skipping to next fingerprint
+Hardware Database regeneration succeeded
+Validating against /config/juniper.conf.gz
+mgd: commit complete
+Validation succeeded
+
+2018-06-26 05:05:12,250:192.168.38.37: installing software ... please be patient ...
+2018-06-26 05:05:12,251:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:06:06,046:192.168.38.37: software pkgadd package-result: 0
+Output: 
+Verified jinstall-host-qfx-10-f-flex-x86-64-17.2R1.13-secure-signed signed by PackageProductionSwitchingEc_2015 method ECDSA256+SHA256
+Pushing Junos image package to the host...
+There is pending upgrade. upgrade_in_progress=stage
+Please reboot the system to complete the installation or rollback before attempting another upgrade
+
+2018-06-26 05:06:06,048:192.168.38.37: Software installation complete. Rebooting
+2018-06-26 05:06:06,049:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:06:06,202:192.168.38.37: Upgrade pending reboot cycle, please be patient.
+2018-06-26 05:06:06,202:192.168.38.37: Shutdown at Tue Jun 26 15:54:53 2018.
+[pid 29229]
+2018-06-26 05:06:06,203:ncclient.operations.rpc: Requesting 'CloseSession'
+2018-06-26 05:20:03,064:ncclient.transport.ssh: Connected (version 2.0, client OpenSSH_6.9)
+2018-06-26 05:20:03,213:ncclient.transport.ssh: Authentication (password) successful!
+2018-06-26 05:20:03,476:ncclient.transport.session: initialized: session-id=13393 | server_capabilities=<dict_keyiterator object at 0x7f51039e4f48>
+2018-06-26 05:20:03,478:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:20:04,029:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:20:04,274:ncclient.operations.rpc: Requesting 'ExecuteRpc'
+2018-06-26 05:20:04,455:ncclient.operations.rpc: Requesting 'CloseSession'
